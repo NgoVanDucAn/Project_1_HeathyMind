@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+.layout-item img{
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.layout-item a{
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    color: darkcyan;
+}
+.layout{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px; 
+    box-sizing: inherit; 
+    margin-bottom: 10px; padding: 20px; 
+    box-sizing: inherit; 
+    line-height: auto ;
+    padding: 15px;
+    background-color: aliceblue;
+}
+.special{
+    color: #191F3A;
+}
+.container2{
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.layout-item{
+    height: auto;
+    margin-top: 100px;
+   
+}
+    
+.layout{
+    display: grid;
+    grid-template-columns: 67% 6% 27%;
+}
+
+.layout-item h3{
+    word-wrap: break-word;
+}
+.layout-item h4{
+    text-indent: 30px;
+}
+
+
+footer{
+    background-color: #191F3a;
+    display: flex;
+    height: 200px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer .noi-dung-links{
+    color: aliceblue;
+    margin-left: 400px;
+}
+footer .noi-dung-about{
+    color: aliceblue;
+    margin-left: 100px;
+}
+footer img{
+    width: 150px;
+}
+

@@ -1,0 +1,233 @@
+
+:root{
+    --main-color: #191F3A;
+    --sub-color: #EAA023;
+    --text-color: #ffffff;
+    --bg-color: #0C1023;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.section-pading{
+    padding: 80px 0;
+}
+.justify-content{
+    justify-content: space-between;
+}
+.container{
+    margin: auto;
+    max-width: 1200px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search{
+    background: var(--text-color);
+    transform: translate(30%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    border-radius: 50px; 
+}
+.search-txt{
+    width: 300px;
+    height: 40px;  
+    border: none;
+    outline: none;
+}
+
+.search .icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    float: right;
+    border-radius: 50px;
+    text-align: center;
+    color: var(--sub-color);
+    font-size: 30px;
+    line-height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.search button:hover{
+    background-color: #EAA023;
+    color: #ffffff;
+    animation: xoaytron 2s infinite;
+}
+@keyframes xoaytron{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.top{
+    background-color: #191F3A;
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+}
+.top::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: all 0.35s ease;
+}
+.top.active::before{
+    transform: translateY(0);
+
+}
+.top .logo img{
+    width: 80px;
+}
+.top .menu-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.top .menu-bar.active{
+    position: fixed;
+    top: 30px;
+    right: 0;
+    transform: translateX(-200px);
+    z-index: 1;
+}
+.top .menu-bar span{
+    display: block;
+    height: 2px;
+    width: 40px;
+    background-color: var(--sub-color);
+    position: relative;
+}
+.top .menu-bar.active span{
+    background-color: transparent;
+}
+.top .menu-bar.active span::before{
+    transform: rotate(-135deg);
+}
+.top .menu-bar.active span::after{
+    transform: rotate(135deg);
+}
+.top .menu-bar span::before{
+    height: 100%;
+    width: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateY(-10px);
+    background-color: var(--sub-color);
+}
+.top .menu-bar span::after{
+    height: 100%;
+    width: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateY(10px);
+    background-color: var(--sub-color);
+    transition: all 0.25s ease;
+}
+.menu-items{
+    position:fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--main-color);
+    right:  0;
+    top: 0;
+    padding: 80px 50px;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.menu-items.active{
+    transform: translateX(0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    /* canh giữa cách lề mỗi bên 10% */
+    margin: 0px -35px;
+    width: 202px;
+} 
+nav{
+    background: #191F3A; /*tô màu cho menu cha*/
+    font-size: 21px;
+    text-align: center;
+}
+nav> ul li{
+    list-style: none; /* bỏ dấu chấm mặc định của li */
+}
+ ul li a{
+    display: block;
+    padding: 0 25px;
+    line-height: 50px;
+    color:#ffffff;
+    text-decoration: none;
+}
+/* Khi hover đến li, tô màu cho thẻ a */
+nav ul li:hover>a{
+    /* background: red; */
+    opacity: .7;
+    background-color: #EAA023;
+    display: block;
+}
+/*menu con*/
+/*Ẩn các menu con cấp 1,2,3*/
+nav li ul{
+    display: none;
+    min-width: 213px;
+    position: absolute;
+}
+nav li>ul li{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: var(--bg-color);
+    text-align: center;
+}
+/*khi hover thì hiện menu con*/
+nav  li:hover > ul{
+    display:  block;
+}
+/*Hiển thị menu con cấp 2,3,4 bên cạnh phải*/
+nav > ul li > ul li >ul{
+    right: 223px;
+    margin-top: -50px;
+}
+li a:hover, nav li:hover{
+    background-color: var(--sub-color);
+}
+.logo{
+    list-style: none;
+}
+
+
+

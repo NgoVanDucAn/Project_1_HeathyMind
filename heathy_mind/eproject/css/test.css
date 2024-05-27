@@ -1,0 +1,33 @@
+
+  
+  .borders{
+    border: 3px solid blue;
+
+  }
+  .sidebar { 
+    float: right;
+    width: 330px;
+    padding: 12px 12px;
+    margin: 0 0 17px 0;
+    border: solid black;
+    margin-right: 60px;
+    margin-top: 25px;
+  }
+    
+
+
+  .content { 
+    text-align: left;
+    width: 670px;
+    margin: 25px 0 0 0;
+    float: left;
+    font-size: 120%;
+    margin-left: 60px;
+  } 
+
+
+
+  
+  
+
+  
