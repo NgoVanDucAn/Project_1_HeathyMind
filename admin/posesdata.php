@@ -100,13 +100,8 @@ if ($delete_id) {
               <tr>
                 <th scope="col">#ID</th>
                 <th scope="col">POSSES_NAME</th>
-                <th scope="col">INFORMATION</th>
-                <th scope="col">VIDEO_FILE</th>
                 <th scope="col">THUMBNAIL</th>
-                <th scope="col">TYPE</th> 
-                <th scope="col">ANATOMY</th>
-                <th scope="col">BENEFIT</th>
-               
+              
 
               </tr>
             </thead>
@@ -136,13 +131,7 @@ if ($delete_id) {
 
 
               <td><?php echo $row['poses_name'] ?></td>
-              <td><?php echo $row['information'] ?></td>
-              <td><?php echo $row['video_file'] ?></td>
-              <td><img src="<?php echo $row['thumbnail']?>"style="max-width:200px" id= "img_thumbnail"> </td>
-              <td><?php echo $row['type'] ?></td>
-              <td><?php echo $row['anatomy'] ?></td>
-              <td><?php echo $row['benefit'] ?></td> 
-              
+              <td><img src="<?php echo $row['thumbnail']?>"style="max-width:100px; max-heigh: 100px" id= "img_thumbnail"> </td>
               <td><a class="btn btn-danger" href="./posesdata.php?delete_id=<?php echo $row['poses_id']?>" 
               role="button">Delete</a></td>
             </tr>
