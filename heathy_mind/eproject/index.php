@@ -125,7 +125,7 @@
                 </div>
                 <div class="about-item">
                     <div class="about-item-img">
-                        <span>HEALTHY MIND</span>
+                        <span>HEALTHY MINDs</span>
                         <img src="image/about.jpg" alt="">
                     </div>
                 </div>
